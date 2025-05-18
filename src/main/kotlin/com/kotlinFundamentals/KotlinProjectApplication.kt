@@ -48,7 +48,6 @@ fun main(args: Array<String>) {
     println(strg)
 
 
-
     //name = 1
 
     //String interpolation
@@ -85,8 +84,8 @@ fun main(args: Array<String>) {
     kotlinAdventureThree.userInfo("ALex", 25, "Israel")
 //    kotlinAdventureThree.userInfo(25, "Alex", "Israel")
 
-    kotlinAdventureThree.userInfo(name="Gaash", age = 25, country = "Israel")
-    kotlinAdventureThree.userInfo( age = 25, name="Gaash", country = "Israel")
+    kotlinAdventureThree.userInfo(name = "Gaash", age = 25, country = "Israel")
+    kotlinAdventureThree.userInfo(age = 25, name = "Gaash", country = "Israel")
     kotlinAdventureThree.userInfo(country = "Israel", age = 25)
 
     //Advantages of Named Arguments:
@@ -99,16 +98,30 @@ fun main(args: Array<String>) {
     val kotlinAdventureFour = KotlinAdventureFour()
 
     //Lambda expressions (functions as arguments to my higher-order function)
-    val sum = {x: Int, y: Int -> x + y}
-    val multiply = {x: Int, y: Int -> x * y }
-    val divide = {x: Int, y: Int -> x / y }
+    val sum = { x: Int, y: Int -> x + y }
+    val multiply = { x: Int, y: Int -> x * y }
+    val divide = { x: Int, y: Int -> x / y }
 
     kotlinAdventureFour.operate(5, 10, sum)
     kotlinAdventureFour.operate(5, 10, multiply)
     kotlinAdventureFour.operate(5, 10, divide)
 
 
+    val nullableArticle = Article(
+        "developers are nice",
+        "Kotlin developers are not nice"
+    )
+    println(nullableArticle.content)
 
+    nullableArticle.content = null
+    println(nullableArticle.content?:"empty content")
+
+    val person1 = Person("Idan")
+    val developerIdan1= Developer()
+
+    developerIdan1.name = "Idan"
+    println("${developerIdan1.name} has skills: ${developerIdan1.skills}")
+    println("so he is not just person ${person1.name}")
 
 }
 

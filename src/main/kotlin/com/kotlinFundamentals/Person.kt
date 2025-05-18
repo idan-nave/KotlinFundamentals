@@ -1,5 +1,5 @@
 package com.kotlinFundamentals
 
-data class Person(
+open class Person(
     var name: String = ""
 )
