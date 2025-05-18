@@ -1,4 +1,4 @@
-package com.cyberpro.kotlin.KotlinProject
+package com.kotlinFundamentals
 
 import org.junit.jupiter.api.Test
 import org.springframework.boot.test.context.SpringBootTest

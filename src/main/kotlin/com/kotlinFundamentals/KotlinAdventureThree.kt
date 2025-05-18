@@ -1,4 +1,4 @@
-package com.cyberpro.kotlin.KotlinProject
+package com.kotlinFundamentals
 
 class KotlinAdventureThree {
 

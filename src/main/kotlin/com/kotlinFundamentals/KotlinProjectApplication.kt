@@ -1,4 +1,4 @@
-package com.cyberpro.kotlin.KotlinProject
+package com.kotlinFundamentals
 
 import org.springframework.boot.autoconfigure.SpringBootApplication
 import org.springframework.boot.runApplication
@@ -11,13 +11,12 @@ fun main(args: Array<String>) {
 
 
     //mutable variables
-    var name = "Vivek"
+    var name = "IDAN"
 
     println("name: " + name)
     System.out.println(name)
     println("name : $name")
 
-    name = "Idan"
 
     println("name after changing : $name")
 
@@ -47,6 +46,18 @@ fun main(args: Array<String>) {
     strg.append(" :  efg")
 
     println(strg)
+
+
+
+    //name = 1
+
+    //String interpolation
+    println("name : $name")
+    println("length of name : ${name.length}")
+    println("length of name : ${name.toUpperCase().length}")
+
+    //String interpolation
+    println("name in lower case: " + name.toLowerCase())
 
 
     val str = "Zev"
