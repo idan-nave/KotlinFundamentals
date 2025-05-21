@@ -1,4 +1,5 @@
 package com.kotlinFundamentals
 
-class KotlinExtensions {
-}
+fun String.isPalindrome() = this == this.reversed()
+
+fun KotlinCollections.isAgesExceed120() = this.sumAllDevelopersAges() > 120

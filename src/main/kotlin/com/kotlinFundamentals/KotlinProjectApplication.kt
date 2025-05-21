@@ -123,5 +123,12 @@ fun main(args: Array<String>) {
     println("${developerIdan1.name} has skills: ${developerIdan1.skills}")
     println("so he is not just person ${person1.name}")
 
+    val kotlinCollections = KotlinCollections()
+
+    kotlinCollections.listAllDevelopers()
+    kotlinCollections.listAllOldDevelopers()
+    kotlinCollections.listAllOCompanySkills()
+    println("SummedUp developers ages: ${kotlinCollections.sumAllDevelopersAges()}")
+    println("calling extension function: is SummedUp ages exceed 120? ${kotlinCollections.isAgesExceed120()}")
 }
 
